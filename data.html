@@ -18,14 +18,14 @@
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 15px;
       margin-bottom: 40px;
-      max-width: 900px;
+      max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
     }
 
     .gallery img {
       width: 100%;
-      height: 150px;
+      height: 160px;
       object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -37,8 +37,8 @@
     }
 
     .data-science-skills {
-      max-width: 700px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin: 0 auto 60px auto;
       background: white;
       padding: 30px 40px;
       border-radius: 10px;
@@ -92,6 +92,38 @@
 
     .skill-icon {
       font-size: 1.2rem;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #0f5bb5;
+    }
+
+    footer {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -168,6 +200,15 @@
 
   </section>
 
+  <!-- Back Button -->
+  <a href="aragew.html" class="back-button">← Back to Home</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aragew Sisay. All rights reserved.</p>
+  </footer>
+
+  <!-- Progress Bar Animation -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const progressFills = document.querySelectorAll('.progress-fill');
@@ -179,11 +220,6 @@
       });
     });
   </script>
-  <footer>
-    <div class="container">
-      <p>© 2025 Aragew Sisay. All rights reserved.</p>
-    </div>
-  </footer>
 
 </body>
 </html>
