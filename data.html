@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Science Skills - Aragaw Sisay</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 40px 20px;
+      color: #222;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin-bottom: 40px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .data-science-skills {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .data-science-skills h2 {
+      color: #0f1c2e;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 2rem;
+      letter-spacing: 1.1px;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: #1a73e8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skill-desc {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .progress-bar {
+      background: #dceefc;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 20px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0;
+      background: #1a73e8;
+      border-radius: 6px 0 0 6px;
+      transition: width 1.5s ease-in-out;
+      box-shadow: 0 2px 6px rgba(26, 115, 232, 0.6);
+    }
+
+    .skill-icon {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img src="data.jpg" alt="Data" />
+    <img src="data1.jpg" alt="Data 1" />
+    <img src="data2.jpg" alt="Data 2" />
+    <img src="data3.jpg" alt="Data 3" />
+    <img src="data4.jpg" alt="Data 4" />
+    <img src="data5.png" alt="Data 5" />
+    <img src="data6.jpg" alt="Data 6" />
+  </div>
+
+  <!-- Skills Section -->
+  <section class="data-science-skills">
+    <h2>Data Science Skills</h2>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">📊</span> Data Analysis & Visualization</div>
+      <div class="skill-desc">Proficient in exploratory data analysis and visual storytelling using Python libraries such as Pandas, Matplotlib, and Seaborn.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">🤖</span> Machine Learning</div>
+      <div class="skill-desc">Experienced with supervised and unsupervised learning algorithms including regression, classification, clustering, and ensemble methods.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">📈</span> Statistical Modeling</div>
+      <div class="skill-desc">Skilled in statistical inference, hypothesis testing, and probabilistic modeling to drive data-driven decisions.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="80%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">💾</span> Big Data Technologies</div>
+      <div class="skill-desc">Familiar with handling large datasets using tools like Apache Spark and Hadoop ecosystem.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="70%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">🐍</span> Programming Languages</div>
+      <div class="skill-desc">Strong command of Python, R, and SQL for data manipulation and automation.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">🧹</span> Data Cleaning & Preparation</div>
+      <div class="skill-desc">Expertise in cleaning, transforming, and preparing raw data for analysis to ensure data quality and integrity.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">📝</span> Natural Language Processing (NLP)</div>
+      <div class="skill-desc">Applied NLP techniques for text analytics including sentiment analysis and topic modeling.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="75%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">🧠</span> Deep Learning & AI</div>
+      <div class="skill-desc">Understanding of neural networks, CNNs, RNNs using frameworks such as TensorFlow and Keras.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="65%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title"><span class="skill-icon">📊</span> Data Storytelling & Reporting</div>
+      <div class="skill-desc">Ability to communicate complex data insights to stakeholders through dashboards and reports using Power BI and Tableau.</div>
+      <div class="progress-bar"><div class="progress-fill" data-fill="85%"></div></div>
+    </div>
+
+  </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const progressFills = document.querySelectorAll('.progress-fill');
+      progressFills.forEach(bar => {
+        const fillWidth = bar.getAttribute('data-fill');
+        setTimeout(() => {
+          bar.style.width = fillWidth;
+        }, 200);
+      });
+    });
+  </script>
+  <footer>
+    <div class="container">
+      <p>© 2025 Aragew Sisay. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
