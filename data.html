@@ -3,215 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Data Science Skills - Aragaw Sisay</title>
+  <title>Data Science Gallery with Context</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f0f4f8;
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fb;
       margin: 0;
-      padding: 40px 20px 80px;
-      color: #222;
+      padding: 20px;
+      color: #333;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-bottom: 50px;
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    .data-science-skills {
-      max-width: 800px;
-      margin: 0 auto;
-      background: white;
-      padding: 30px 40px;
+    .image-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
-    .data-science-skills h2 {
-      color: #0f1c2e;
-      text-align: center;
-      margin-bottom: 25px;
-      font-size: 2rem;
-      letter-spacing: 1.1px;
+    .image-section img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
 
-    .skill {
+    .caption {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: #555;
       margin-bottom: 20px;
     }
 
-    .skill-title {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-bottom: 8px;
+    h2 {
+      text-align: center;
       color: #1a73e8;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .skill-desc {
-      font-size: 0.95rem;
-      margin-bottom: 8px;
-      color: #444;
-    }
-
-    .progress-bar {
-      background: #dceefc;
-      border-radius: 6px;
-      overflow: hidden;
-      height: 20px;
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    .progress-fill {
-      height: 100%;
-      width: 0;
-      background: #1a73e8;
-      border-radius: 6px 0 0 6px;
-      transition: width 1.5s ease-in-out;
-      box-shadow: 0 2px 6px rgba(26, 115, 232, 0.6);
-    }
-
-    .skill-icon {
-      font-size: 1.2rem;
+      margin-top: 50px;
     }
 
     .back-button {
       display: block;
       width: fit-content;
-      margin: 40px auto 20px;
+      margin: 20px auto;
       padding: 10px 20px;
       background-color: #1a73e8;
       color: white;
       text-decoration: none;
-      font-weight: bold;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
-    }
-
-    .back-button:hover {
-      background-color: #155ab6;
     }
 
     footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
       background-color: #1a73e8;
       color: white;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      margin-top: 60px;
-      border-radius: 12px 12px 0 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Back Button -->
-  <a class="back-button" href="aragew.html">⬅ Back to Aragaw</a>
+  <h2>Data Science Visuals & Context</h2>
 
-  <!-- Image Gallery -->
-  <div class="gallery">
-    <img src="data.jpg" alt="Data" />
-    <img src="data1.jpg" alt="Data 1" />
-    <img src="data2.jpg" alt="Data 2" />
-    <img src="data3.jpg" alt="Data 3" />
-    <img src="data4.jpg" alt="Data 4" />
-    <img src="data5.png" alt="Data 5" />
-    <img src="data6.jpg" alt="Data 6" />
+  <div class="image-section">
+    <img src="data.jpg" alt="Data Science Workflow">
+    <div class="caption">
+      This image represents a typical data science workflow, including data acquisition, cleaning, modeling, and visualization.
+    </div>
   </div>
 
-  <!-- Skills Section -->
-  <section class="data-science-skills">
-    <h2>Data Science Skills</h2>
-
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">📊</span> Data Analysis & Visualization</div>
-      <div class="skill-desc">Proficient in exploratory data analysis and visual storytelling using Python libraries such as Pandas, Matplotlib, and Seaborn.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="90%"></div></div>
+  <div class="image-section">
+    <img src="data1.jpg" alt="Python Code for Data Cleaning">
+    <div class="caption">
+      Example of Python code for cleaning raw datasets using Pandas — one of the most powerful tools for data manipulation.
     </div>
+  </div>
 
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">🤖</span> Machine Learning</div>
-      <div class="skill-desc">Experienced with supervised and unsupervised learning algorithms including regression, classification, clustering, and ensemble methods.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="85%"></div></div>
+  <div class="image-section">
+    <img src="data2.jpg" alt="Data Visualization">
+    <div class="caption">
+      A bar chart created using Matplotlib and Seaborn, showing customer segmentation based on purchase behavior.
     </div>
+  </div>
 
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">📈</span> Statistical Modeling</div>
-      <div class="skill-desc">Skilled in statistical inference, hypothesis testing, and probabilistic modeling to drive data-driven decisions.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="80%"></div></div>
+  <div class="image-section">
+    <img src="data3.jpg" alt="Machine Learning Pipeline">
+    <div class="caption">
+      Overview of a machine learning pipeline: data preprocessing, training, evaluation, and deployment using Scikit-learn.
     </div>
+  </div>
 
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">💾</span> Big Data Technologies</div>
-      <div class="skill-desc">Familiar with handling large datasets using tools like Apache Spark and Hadoop ecosystem.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="70%"></div></div>
+  <div class="image-section">
+    <img src="data4.jpg" alt="Statistical Model Output">
+    <div class="caption">
+      Output from a regression model predicting housing prices, including coefficients, R² score, and residual analysis.
     </div>
+  </div>
 
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">🐍</span> Programming Languages</div>
-      <div class="skill-desc">Strong command of Python, R, and SQL for data manipulation and automation.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="95%"></div></div>
+  <div class="image-section">
+    <img src="data5.png" alt="Big Data Architecture">
+    <div class="caption">
+      An architectural diagram showing integration of big data tools like Hadoop, Spark, and Hive in a data platform.
     </div>
+  </div>
 
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">🧹</span> Data Cleaning & Preparation</div>
-      <div class="skill-desc">Expertise in cleaning, transforming, and preparing raw data for analysis to ensure data quality and integrity.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="90%"></div></div>
+  <div class="image-section">
+    <img src="data6.jpg" alt="Natural Language Processing">
+    <div class="caption">
+      Visual showing natural language processing tasks like sentiment analysis and named entity recognition using NLTK and spaCy.
     </div>
-
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">📝</span> Natural Language Processing (NLP)</div>
-      <div class="skill-desc">Applied NLP techniques for text analytics including sentiment analysis and topic modeling.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="75%"></div></div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">🧠</span> Deep Learning & AI</div>
-      <div class="skill-desc">Understanding of neural networks, CNNs, RNNs using frameworks such as TensorFlow and Keras.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="65%"></div></div>
-    </div>
-
-    <div class="skill">
-      <div class="skill-title"><span class="skill-icon">📊</span> Data Storytelling & Reporting</div>
-      <div class="skill-desc">Ability to communicate complex data insights to stakeholders through dashboards and reports using Power BI and Tableau.</div>
-      <div class="progress-bar"><div class="progress-fill" data-fill="85%"></div></div>
-    </div>
-  </section>
-
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const progressFills = document.querySelectorAll('.progress-fill');
-      progressFills.forEach(bar => {
-        const fillWidth = bar.getAttribute('data-fill');
-        setTimeout(() => {
-          bar.style.width = fillWidth;
-        }, 200);
-      });
-    });
-  </script>
-
+  </div>
+<a class="back-button" href="aragew.html">⬅ Back to Aragaw</a>
   <footer>
     <p>© 2025 Aragaw Sisay. All rights reserved.</p>
   </footer>
